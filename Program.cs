@@ -3,7 +3,7 @@ int count;
 string s;
 string[] ArrString2; 
 
-    Console.WriteLine("Введите несколько строк:");
+    Console.WriteLine("Введите несколько строк. Как только захотите закончить ввод нажмите 2 раза клавишу Enter:");
      count = 0; 
      ArrString = new string[count];
 
@@ -29,11 +29,19 @@ string[] ArrString2;
       } while (s != "");
 
       
+// for (int i=0; i<ArrString.Length; i++)
+// {
+//     Console.Write($" {ArrString[i]}");
+// }
+
 for (int i = 0; i < ArrString.Length; i++)
-        if (ArrString.Length <= 3)
-        {
-Console.WriteLine(ArrString[i]);
-        }
+    if (ArrString.Length < 4)
+    {
+      Console.WriteLine( ArrString[i]);
+      Console.ReadKey();
+    }
         
-      
+
+
+              
       
